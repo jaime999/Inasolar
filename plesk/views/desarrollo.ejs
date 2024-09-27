@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('head.ejs'); -%>
+    <body class="fs-5">
+        <%- include('header.ejs'); -%> 
+        <main class="mx-auto">
+            <section class="container p-4">
+                <h2>ENERO DE 2023</h2>
+                <p>Desarrollo de la aplicación para la visualización gráfica de datos.</p>
+                <img class="img-fluid" src="/img/visualizador.png" alt="">
+            </section>
+            <section class="container p-4 mt-5">
+                <h2>FEBRERO DE 2023</h2>
+                <p>Desarrollo de la web INASOLAR</p>
+                <img class="img-fluid" src="/img/web_screenshot.png" alt="">
+            </section>
+            <section class="container p-4 mt-5">
+                <h2>MARZO DE 2023</h2>
+                <p>Desarrollo de la aplicación para seleccionar días similares entre sí teniendo en cuenta variables meteorológicas.</p>
+                <img class="img-fluid" src="/img/similar.png" alt="">
+            </section>
+			<section class="container p-4 mt-5">
+                <h2>ABRIL DE 2023</h2>
+                <p>Desarrollo de una segunda aplicación para seleccionar días similares entre sí. En este caso se puede indicar la importancia de las variables meteorológicas, asignando unos pesos a las mismas, para poder observar la relevancia de cada una de ellas.</p>
+                <img class="img-fluid" src="/img/similar_ponders.png" alt="">
+            </section>
+			<section class="container p-4 mt-5">
+                <h2>MAYO Y JUNIO DE 2023</h2>
+                <p>Desarrollo e implementación de una aplicación que permite simular la generación eléctrica horaria mediante recursos energéticos renovables distribuidos, partiendo de una demanda conocida. Con esta aplicación se puede determinar el tamaño adecuado de cada plante generadora renovable en función del objetivo que se desee alcanzar (minimizar intercambios de energía con la red, minimizar costes de compra de energía, maximizar beneficios por venta de energía, etc).</p>
+                <img class="img-fluid" src="/img/resource_allocation.png" alt="">
+				<p>Además, durante estos meses se ha adquirido una carga electrónica RLC que servirá para la simulación de diferentes escenarios de consumo.</p>
+				<p class="text-center"><img class="img-fluid" src="/img/RLC.jpg" alt=""></p>
+            </section>
+			<section class="container p-4 mt-5">
+                <h2>JULIO DE 2023</h2>
+                <p>Mejora de la interfaz gráfica de las aplicaciones creadas, añadiendo nuevas funcionalidades y gráficos para una mejor comprensión de los resultados generados.</p>
+				<p>En el caso de la app “resource allocation” se ha mejorado la visualización de la generación renovable como se muestra en la siguiente imagen.</p>
+				<p class="text-center ms-5">
+                    <img class="img-fluid" src="/img/resource_allocation_july.png" alt="">
+                </p>
+				<p>Además, durante el mes de julio se ha adquirido e instalado en la cubierta del edificio un grupo electrógeno para simular la generación de una planta de biogás. Dicho grupo se sitúa junto a las placas solares de las que se dispone para el registro de generación fotovoltaica.</p>
+				<p class="text-center">
+                    <img class="img-fluid w-25" src="/img/biogas_roof1.jpg" alt="">
+				    <img class="img-fluid w-25 ms-5" src="/img/biogas_roof2.jpg" alt="">
+                </p>
+            </section>
+			<section class="container p-4 mt-5">
+				<h2>SEPTIEMBRE DE 2023</h2>
+				<p>Integración del cuadro de control del grupo electrógeno en la sala de control general. Actualmente en dicha sala se dispone de:</p>
+				<ol>
+					<li>Inversor paneles solares FV.</li>
+					<li>Cuadro de control y mando del grupo electrógeno.</li>
+					<li>Carga electrónica RLC para simular diferentes escenarios de consumo.</li>
+				</ol>
+				<p>Todos estos sistemas están siendo integrados en el sistema para la futura simulación de escenarios de una microred conectada a red.</p>
+                <p class="text-center">
+                    <img class="img-fluid" src="/img/cuadro1.jpg" alt="">
+                    <img class="img-fluid ms-5" src="/img/cuadro2.jpg" alt="">
+                </p>
+				<p>Así mismo, se han corregido errores detectados en las aplicaciones desarrolladas durante meses anteriores.</p>
+			</section>
+			<section class="container p-4 mt-5">
+				<h2>OCTUBRE DE 2023</h2>
+				<p>Adquisición y montaje de un cuadro general de control y visualización de todas las centrales renovables instaladas. Dicho cuadro está preinstalado con los sistemas de visualización y control de las futuras fuentes a instalar (eólica e hidráulica).</p>
+                <p class="text-center">
+                    <img class="img-fluid" src="/img/cuadro3.png" alt="">
+                </p>
+				<p>Por otro lado, se ha integrado el cálculo y la visualización de costes en la aplicación de resource allocation.</p>
+                <p class="text-center">
+                    <img class="img-fluid" src="/img/cost_visualization.png" alt="">
+                </p>
+				<p>Esto permite empezar a trabajar en la aplicación de previsión de demanda y generación, con la asignación de unidades correspondiente y sus costes (aplicación “unit commitment”).</p>
+				
+			</section>
+            <section class="container p-4 mt-5">
+				<h2>NOVIEMBRE DE 2023</h2>
+				<p>Se ha integrado el apartado de fiabilidad dentro de la propia aplicación de “Resource Allocation”. Esto permite simular escenarios más fieles a la realidad, ya que se considera la posibilidad de la existencia de averías en los generadores o en la red. Dichas averías vienen dadas por expresiones estadísticas.</p>
+                <p class="text-center">
+                    <img class="img-fluid" src="/img/fiabilidad.png" alt="">
+                </p>
+				<p>Así mismo, se han mejorado y corregido errores detectados en la propia aplicación. Con ello la aplicación resulta más intuitiva para el usuario y se realizan las simulaciones con un menor coste computacional.</p>				
+			</section>
+            <section class="container p-4 mt-5">
+				<h2>DICIEMBRE DE 2023</h2>
+				<p>Adquisición y montaje de la micro central hidráulica en el GederLab. Durante el mes de diciembre se ha realizado la instalación hidráulica correspondiente de los depósitos superior e inferior, así como las turbinas y bombas correspondientes. Esto permitirá realizar ensayos en los próximos meses que incluyan este recurso hídrico.</p>
+                <p>Se dispone de un almacenamiento de 500 L en el depósito superior y 500 L en el depósito inferior para simular un ciclo de agua cerrado. Por otro lado, se cuenta con dos turbinas de 1,50kW cada una y dos bombas de 0,60kW cada una. Es decir, se dispone de 3kW de turbinado y 1,2kW de bombeo.</p>
+                <p class="text-center">
+                    <img class="img-fluid" src="/img/hidraulica.jpg" alt="">
+                </p>
+				<p>Por otro lado, se está trabajando en el desarrollo de un sistema de optimización de las plantas renovables en la propia aplicación “Resource Allocation”.</p>				
+			</section>
+            <section class="container p-4 mt-5">
+				<h2>ENERO Y FEBRERO DE 2024</h2>
+                <p>Se ha integrado la micro central hidráulica a la microrred existente en el GederLab.</p>
+                <p>Se está mejorando la integración de las micro centrales renovables disponibles, así como la corrección de errores y mejoras en las aplicaciones existentes</p>
+                <p>Se ha adquirido un aerogenerador eólico de eje vertical, el cual ha sido instalado en la cubierta del edificio 5E, y se integrará con el resto de los generadores existentes.</p>
+                <p class="text-center">
+                    <img class="img-fluid" src="/img/eolica.jpg" alt="aerogenerador eolico">
+                </p>
+			</section>
+
+            <section class="container p-4 mt-5">
+				<h2>MARZO Y ABRIL DE 2024</h2>
+                <p>Durante los meses de marzo y abril se han integrado todos los generadores. Con ello se dispone de un sistema que cuenta con:  </p>
+                <ul>
+                    <li>Generación FV</li>
+                    <li>Generación eólica</li>
+                    <li>Generación de biogás (simulado mediante grupo electrógeno)</li>
+                    <li>Generación hidráulica</li>
+                    <li>Sistema de almacenamiento mediante baterías</li>
+                    <li>Conexión a red</li>
+                    <li>Carga programable</li>
+                </ul>
+                <p>Se están configurando todos ellos, para poder gestionarlos de forma remota desde el centro de control del GEDERlab y realizar las simulaciones requeridas en el marco del proyecto INASOLAR.</p>
+            </section>
+
+            <section class="container p-4 mt-5">
+				<h2>MAYO DE 2024</h2>
+                <p>Se ha modificado la interfaz gráfica de la página web. Así mismo, se han actualizado los logos del grupo de investigación (GEDER) y del propio proyecto INASOLAR.</p>
+                <img class="img-fluid" src="/img/web_nueva.png" alt="">
+            </section>
+            <section class="container p-4 mt-5">
+				<h2>JUNIO DE 2024</h2>
+                <p>Soporte en la construcción y la dirección de obra de la planta fv de 700 kW en Aras de los Olmos.</p>
+                <p class="text-center"><img class="img-fluid" src="/img/placas_aras.jpg" alt=""></p>
+            </section>
+            <section class="container p-4 mt-5">
+				<h2>JULIO DE 2024</h2>
+                <p>Mientras se continua mejorando la nueva página web, y la correcta integración de todos los sistemas del GEDERlab, se procede a intensificar las labores de divulgación del proyecto. Esta tarea es clave para darle una mayor visibilidad al proyecto INASOLAR, y poder mostrar los resultados que se están obteniendo. Por ello, se han presentado los siguientes resultados durante el mes de julio:</p>
+                <ol>
+                    <li>Desarrollo de un método de optimización del dimensionamiento de las fuentes renovables. Este método se ha presentado en un artículo, el cual se ha enviado a una revista de alto impacto en el sector.</li>
+                    <li>Asistencia al 22 International Conference on Renewable Energies and Power Quality (ICREPQ’24). En dicho congreso se ha presentado el paper “Development of the energy hub GEDERlab at Universitat Politècnica de València for encouraging the integration of renewable energy resources”. Tanto el paper como el poster presentado pueden consultarse en la sección “Documentos”.</li>
+                </ol>
+                <p class="text-center"><img class="img-fluid" src="/img/posters.jpg" alt=""></p>
+            </section>
+        </main>
+        <%- include('footer.ejs'); -%> 
+    </body>
+</html>

@@ -1,0 +1,9 @@
+/* Get the data into a temp table */
+SELECT * INTO #TempTable
+FROM YourTable
+/* Drop the columns that are not needed */
+ALTER TABLE #TempTable
+DROP COLUMN ColumnToDrop
+/* Get results and drop temp table */
+SELECT * FROM #TempTable
+DROP TABLE #TempTable

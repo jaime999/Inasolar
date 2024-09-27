@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" style="width: 70px;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link <% if (page_name === 'index') { %>active<%}else{ %>color_navbar<%}%>" aria-current="page" href="/en/">Start</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <% if (page_name === 'project') { %>active<%}else{ %>color_navbar<%}%>" href="/en/project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <% if (page_name === 'goals') { %>active<%}else{ %>color_navbar<%}%>" href="/en/goals">Goals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <% if (page_name === 'development') { %>active<%}else{ %>color_navbar<%}%>" href="/en/development">Development</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <% if (page_name === 'documents') { %>active<%}else{ %>color_navbar<%}%>" href="/en/documents">Documents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <% if (page_name === 'about') { %>active<%}else{ %>color_navbar<%}%>" href="/en/about">About us</a>
+          </li>
+        </ul>
+        <a id="es" href="/"><img class="translate-icon" src="/img/icons8-spain-48.png" alt="" ></a>  
+        <a id="en" href="/en/<%-page_name-%>"><img class="translate-icon" src="/img/icons8-great-britain-48.png" alt="" ></a>
+        <a href="/private" ><button class="private fw-bold p-2">Private area</button></a>
+      </div>
+    </div>
+  </nav>

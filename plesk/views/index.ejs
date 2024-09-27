@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('head.ejs'); -%>
+    <body class="fs-5">
+        <%- include('header.ejs'); -%> 
+        <main class="mx-auto ">
+            <section class="container p-4">
+                <h2>INASOLAR: Infraestructura para el autoabastecimiento eléctrico sostenible con fuentes renovables del municipio de Aras de los Olmos</h2>
+                <p>El autoabastecimiento energético consiste en la generación propia de energía eléctrica suficiente para el uso propio sin necesidad de recurrir a energía de otra procedencia externa. De este modo el suministro de energía se crea y se consume por el propio municipio.</p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 ">
+                        <p>Cada vez se está extendiendo más la instalación de sistemas que permitan este tipo de modelo energético basado en el autoconsumo, con la finalidad de:</p>
+                        <ul>
+                            <li>Reducir la dependencia energética de la red eléctrica.</li>
+                        </ul>
+                        <ul>
+                            <li>Reducir el impacto medioambiental.</li>
+                        </ul>
+                        <p>Todo ello viene impulsado por las directivas europeas, las cuales buscan una transición del sistema energético actual basado en combustibles fósiles hacia un nuevo sistema basado en energías renovables.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-2 text-center">
+                        <div class="row">
+                            <img src="img/goals_es.png" class="img-fluid" alt="">
+                        </div>
+                        
+                        <div class="row">
+                            <p class="text-end fs-5">Fuente: <a href="https://www.un.org">www.un.org</a></p>
+                        </div>
+                    </div>
+                </div><br>
+                <p class="mb-5">Para ello, se suelen emplear una o varias combinaciones de fuentes de energía renovable, entre las cuales destacan:</p>
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-sm-12 col-md-3 mb-2 text-center">
+                            <img class="img-fluid" src="img/solar_panel_index.png">
+                        </div> 
+
+                        <div class="col-sm-12 col-md-9 ">
+                            <h4>Energía solar fotovoltaica</h4>
+                            <!--
+                                Lo he intentado así, pero no sale, revisar
+                            <ul>
+                                <li class="check">Disponible en cualquier lugar, especialmente en los de alta irradiancia</li>
+                            </ul>
+                            -->
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1 "><img class="check img-fluid" src="img/green_check.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle"><p>Disponible en cualquier lugar, especialmente los de alta irradiancia</p> </div>                        
+                            </div>
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1"><img class="check img-fluid" src="img/green_check.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle""><p>Bajo precio</p> </div>                        
+                            </div>
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1"><img class="check img-fluid" src="img/cross.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle""><p>No es gestionable y solo produce durante las horas de sol</p> </div>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-sm-12 col-md-9 ">
+                            <h4>Energía eólica</h4>
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1"><img class="check img-fluid" src="img/green_check.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle""><p>Disponible en gran parte de los territorios con vientos moderados</p> </div>                        
+                            </div>
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1"><img class="check img-fluid" src="img/green_check.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle""><p>Producción durante varias horas del día si hay viento</p> </div>                        
+                            </div>
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1"><img class="check img-fluid" src="img/cross.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle""><p>No es gestionable y tiene una gran variabilidad</p> </div>                        
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-3 mb-2 text-center">
+                            <img class="img-fluid" src="img/eolic_index.png">
+                        </div> 
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-sm-12 col-md-3 mb-2 text-center">
+                            <img class="img-fluid" src="img/biogas_index.png">
+                        </div> 
+
+                        <div class="col-sm-12 col-md-9 ">
+                            <h4>Energía obtenida a partir de biogás</h4>
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1"><img class="check img-fluid" src="img/green_check.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle""><p>Gestionable</p> </div>                        
+                            </div>
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1"><img class="check img-fluid" src="img/green_check.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle""><p>Forma de onda de tensión estable mediante un generado síncrono</p> </div>                        
+                            </div>
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1"><img class="check img-fluid" src="img/green_check.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle""><p>Mejora la estabilidad del sistema energético</p> </div>                        
+                            </div>
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1"><img class="check img-fluid" src="img/cross.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle""><p>Requiere grandes superficies de terreno</p></div>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-sm-12 col-md-9">
+                            <h4>Energía hidroeléctrica</h4>
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1"><img class="check img-fluid" src="img/green_check.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle""><p>Gestionable</p> </div>                        
+                            </div>
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1"><img class="check img-fluid" src="img/green_check.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle""><p>Puede emplearse como almacenamiento del excedente de energía</p> </div>                        
+                            </div>
+                            <div class="row">
+                                <div class="col-3 col-sm-2 col-lg-1"><img class="check img-fluid" src="img/cross.png" alt=""></div>
+                                <div class="col-9 col-sm-10 col-lg-11 align-middle""><p>Coste elevado y alto impacto ambiental</p> </div>                        
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-3 mb-2 text-center">
+                            <img class="img-fluid" src="img/hydroelectric_index.png">
+                        </div> 
+                    </div>
+                    <p><strong>INASOLAR</strong> se presenta como un proyecto de I+D+i <strong>pionero</strong>, el cual persigue desarrollar la infraestructura necesaria para alcanzar el <strong>autoabastecimiento</strong> del municipio de <strong>Aras de los Olmos</strong>, situado en Valencia. Se pretende que este sistema pueda ser replicado por otros municipios que busquen ser autosuficientes, con las numerosas ventajas que ello conlleva.</p>
+                    <img class="img-fluid" src="img/Aras_es.jpg" alt="">
+                    <p class="text-end "><a href="/proyecto"><button class="link fw-bold p-4 mt-5">Conocer más sobre INASOLAR</button></a></p>
+                </div>
+            </section>
+        </main>
+        <%- include('footer.ejs'); -%> 
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <title>Migrator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col border-end border-gray me-3">
+          <form id="origin-form" action="#">
+            <h1>Select Origin</h1>
+            <div class="mb-3">
+              <label class="form-label">Host address</label>
+              <input type="text" name="host" value="FOTODIE\MSSQLSERVER01" class="form-control" id="origin-address"required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Port number</label>
+              <input type="number" name="port" class="form-control" id="origin-port">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Database name</label>
+              <input type="text" name="dbname" value="Labder2" class="form-control" id="origin-db-name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Database username</label>
+              <input type="text" name="dbusername" value="geder" class="form-control" id="origin-username" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Database password</label>
+              <input type="password" name="dbpassword" value="geder" class="form-control" id="origin-password" required>
+              <input type="hidden" name="source" value="origin">
+            </div>
+            <div class="mb-3 d-flex justify-content-between">
+              <button type="submit" class="btn btn-primary" id="btn-connect-origin">Connect</button>
+              <button type="submit" class="btn btn-danger">Disconnect</button>
+            </div>
+            <div class="mb-3">
+              <h3 class="text-danger" id="origin-state">NOT READY!</h3>
+            </div>  
+          </form>
+        </div>
+        <div class="col border-start border-gray ">
+          <form id="destination-form" action="#">
+            <h1>Select Destination</h1>
+            <div class="mb-3">
+              <label class="form-label">Host address</label>
+              <input type="text" name="host" value="158.42.22.107" class="form-control" id="destination-address" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Port number</label>
+              <input type="number" name="port" class="form-control" id="destination-port">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Database name</label>
+              <input type="text" name="dbname" value="inasolar" class="form-control" id="destination-db-name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Database username</label>
+              <input type="text" name="dbusername" value="GEDER" class="form-control" id="destination-username" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Database password</label>
+              <input type="password" name="dbpassword" value="GEDER" class="form-control" id="destination-password" required>
+              <input type="hidden" name="source" value="destination">
+            </div>
+            <div class="mb-3 d-flex justify-content-between">
+              <button type="submit" class="btn btn-primary">Connect</button>
+              <button type="submit" class="btn btn-danger" id="disconnect">Disconnect</button>
+            </div>
+            <div class="mb-3">
+              <h3 class="text-danger" id="destination-state">NOT READY!</h3>
+            </div> 
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/renderer.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

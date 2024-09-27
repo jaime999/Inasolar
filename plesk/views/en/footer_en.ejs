@@ -1,0 +1,16 @@
+<footer class="mt-5 mx-auto mb-5">
+    <div class="container text-center ">
+        <p>2023 | INASOLAR Team</p>
+        <p>Contact: <a class="text-white" href="mailto:guieses@die.upv.es">guieses@die.upv.es</a> - <a class="text-white"  href="mailto:carrolbl@die.upv.es">carrolbl@die.upv.es</a></p> 
+        <p class="notranslate">Universitat Politècnica de València</p>
+        <p>This result is part of the Project TED2021-130464B-I00 (INASOLAR), funded by MCIN/AEI/10.13039/501100011033 and by European Union “NextGenerationEU”/PRTR.</p>
+        <img src="/img/logosProyecto.png" class="img-fluid w-50" alt="">
+    </div>
+</footer>
+<script>
+    //esto es para que cuando le des a traducir te mantenga en la misma pagina
+    var trans = {"project":"proyecto", "goals":"objetivos","about":"conocenos","development":"desarrollo","documents":"documentos"}
+    const url = window.location.href
+    const current_endpoint = url.split("/")[url.split("/").length-1]
+    document.getElementById("es").href = "/"+trans[current_endpoint]
+</script>

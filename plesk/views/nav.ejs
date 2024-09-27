@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-md">
+  <div class="container-fluid">
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" style="width: 70px;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ml-auto me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link <% if (page_name === 'index') { %>active<%}else{ %>color_navbar<%}%>" aria-current="page" href="/">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <% if (page_name === 'projecto') { %>active<%}else{ %>color_navbar<%}%>" href="/proyecto">Proyecto</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link <% if (page_name === 'objetivos') { %>active<%}else{ %>color_navbar<%}%>" href="/objetivos">Objetivos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <% if (page_name === 'desarrollo') { %>active<%}else{ %>color_navbar<%}%>" href="/desarrollo">Desarrollo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <% if (page_name === 'documentos') { %>active<%}else{ %>color_navbar<%}%>" href="/documentos">Documentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <% if (page_name === 'conocenos') { %>active<%}else{ %>color_navbar<%}%>" href="/conocenos">Conócenos</a>
+        </li>
+      </ul>
+      <a id="es" href="/<%-page_name-%>"><img class="translate-icon" src="/img/icons8-spain-48.png" alt="" ></a>
+      <a id="en" href="/en"><img class="translate-icon" src="/img/icons8-great-britain-48.png" alt="" ></a>
+      <a href="/private" ><button class="private fw-bold p-2">Zona Privada</button></a>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style>
+      select,option{
+        cursor: pointer;
+      }
+    </style>
+    <title>Migrator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 id="origin-dbname">Origin dbname</h2>
+        </div>
+        <div class="col">
+          <h2 id="destination-dbname">Destination dbname</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <form id="origin">
+          <div class="form-floating mt-3">
+            <select class="form-select pe-auto" id="floatingSelectOriginTable" onchange="test()">
+            </select>
+            <label for="floatingSelectOriginTable">Select Table</label>
+          </div>
+          <div class="form-floating mt-3">
+            <select class="form-select" id="floatingSelectOriginColumn" disabled>
+            </select>
+            <label for="floatingSelectOriginColumn">Select Column</label>
+          </div>
+          </form>
+        </div>
+        <div class="col">
+          <form id="destination">
+            <div class="form-floating mt-3">
+              <select class="form-select pe-auto" id="floatingSelectDestinationTable">
+              </select>
+              <label for="floatingSelectDestinationTable">Select Table</label>
+            </div>
+            <div class="form-floating mt-3">
+              <select class="form-select" id="floatingSelectDestinationColumn" disabled>
+              </select>
+              <label for="floatingSelectDestinationColumn">Select Column</label>
+            </div>
+            </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-dark mt-3" id="addOriginColumnButton" data-bs-toggle="modal" data-bs-target="#locationModal">ADD COLUMN</button>
+        </div>
+        <div class="col text-end">
+          <button type="button" class="btn btn-dark mt-3 " id="addDestinationColumnButton" data-bs-toggle="modal" data-bs-target="#locationModal">ADD COLUMN</button>
+        </div>
+      </div>
+      <div class="row text-center mt-3">
+        <div class="col ">
+          <button type="button" class="btn btn-dark w-25" id="addCorrelationButton" disabled>IMPORT DATA</button>
+        </div>
+      </div>
+      <div class="row text-center mt-3">
+        <div class="col">
+          <button type="button" class="btn btn-dark w-25" id="scheduleButton" disabled>SCHEDULE DATA IMPORT</button>
+        </div>
+      </div>
+    </div> 
+
+
+    <!--MODAL AÑADIR COLUMNA-->
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="locationModalLabel">New Column</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="#" id="add-column-form">
+            <div class="modal-body">
+              <div class="row">
+                <div class="col">
+                  Column name:<input type="text" class="form-control" id="new-column-name" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  Alternative name:<input type="text" class="form-control" id="new-column-alternative-name">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  Description:
+                  <textarea class="form-control" rows="3" maxlength="254" id="new-column-description"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  Unit of measurement:<input type="text" class="form-control" id="new-column-unit" >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  Datatype:
+                  <select class="form-select" id="column-datatype-select" required>
+                    <option value="float" selected>Float</option>
+                    <option value="int">Integer</option>
+                    <option value="varchar(255)">Varchar</option>
+                    <option value="datetime">Datetime</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <input type="hidden" id="new-column-table">
+              <input type="hidden" id="new-column-source">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close-modal-button">Close</button>
+              <button type="submit" class="btn btn-primary" id="new-location-submit">Add new column</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>   
+    <script src="js/renderer-selection.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

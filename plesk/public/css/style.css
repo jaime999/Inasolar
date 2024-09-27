@@ -1,0 +1,83 @@
+body{
+    padding-top: 1%;
+    background-color: #DDEEFF;
+    width: 100%;
+}
+header{
+    width: 90%;
+}
+
+.color_navbar{
+    color: #226597;
+}
+main{
+    width: 90%;
+    margin-left: 5%;
+}
+main section{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1% 10%;
+}
+h2, h4{
+    color:#226597 ;
+}
+
+li.check{
+    list-style-image: url('/img/green_check.png');
+    background-size: 20px;
+}
+li.check::marker{
+    width: 1%;
+}
+img.check{
+    width: 8vh;
+}
+footer{
+    width: 75%;
+    background-color: #226597;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1% 10%;
+    color: white;
+}
+button.link{
+    background-color: #DDEEFF;
+    border: 1px solid ;
+    border-color: #226597;
+    border-radius: 10px;
+    padding: 1%;
+}
+button.private{
+    background-color: #226597 ;
+    color: white;
+    border-radius: 10px;
+}
+
+.translate-icon{
+    margin-right: 5px;
+}
+
+#google_translate_element select{
+    background-color:#f6edfd;   
+    color:#226597;
+    border: none;
+    border-radius:3px;
+    padding:6px 8px;
+    /*margin-left: 85%*/
+    margin-bottom: 1%;
+   cursor: pointer;
+}
+
+iframe{
+    display: none;
+}
+/*
+.goog-logo-link{
+    display:none !important;
+   }
+ .goog-te-gadget{
+  color:transparent!important;
+  }
+  */

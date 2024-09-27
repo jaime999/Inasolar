@@ -1,0 +1,30 @@
+{
+  "name": "migrator",
+  "version": "1.0.0",
+  "description": "App para migrar datos entre SQL Servers",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "Víctor Pascual",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "electron": "^26.2.2"
+  },
+  "dependencies": {
+    "async-lock": "^1.4.0",
+    "egoroof-blowfish": "^4.0.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "mssql": "^10.0.1",
+    "sqlite3": "^5.1.6"
+  }
+}

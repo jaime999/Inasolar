@@ -1,0 +1,129 @@
+.app-header img,
+.footer img {
+    max-width: 100%;
+}
+
+.card-result {
+    min-height: 200px;    
+    h4 {
+        text-align:center;
+    }
+}
+
+.color-bg {
+    color: #ff8c16;
+}
+
+.color-blue {
+    color: blue;
+}
+
+.color-h {
+    color: #0d66e8;
+}
+
+.color-pv {
+    color: #dbe40e;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-w {
+    color: #308e37;
+}
+
+.csv-export {
+    padding-right:26px;
+}
+
+.dash-graph {
+    height:80vh;
+}
+
+.DateRangePicker_1 {
+    z-index:1000;
+}
+
+.display-initial {
+    display:initial;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.footer .card-body {
+    white-space: pre-wrap;
+    text-align: center;
+    color: white;
+}
+
+.generation-location {
+    margin-bottom:10px;
+}
+
+#graphResourceAllocation {
+    height:90vh;
+}
+
+h2 {
+    color:#226597;
+}
+
+.height-total {
+    height:100%;
+}
+
+.home-links a {
+    color:white;
+}
+
+.inverse-axis {
+    padding-left:12px;
+}
+
+.label-table {
+    color: #474e66;
+}
+
+.map {
+    height: 50vh;
+}
+
+.no-display {
+    display:none;
+}
+
+.no-padding-right {
+    padding-right: 0;
+}
+
+.no-padding-left {
+    padding-left:0;
+}
+
+.no-padding-top {
+    padding-top:0;
+}
+
+.padding-left {
+    padding-left:1rem;
+}
+
+.page-header-row {
+    padding-top: 20px;    
+}
+
+.resourceAllocationSunburstGraph {
+    height: 600px;
+}
+
+.searchRowSimilarDays .quantiles {
+    padding-right: 2vw;
+}
+
+.SingleDatePicker_picker {
+    z-index:2000;
+}
